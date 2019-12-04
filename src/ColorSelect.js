@@ -17,10 +17,10 @@ let btnStyle = {
 }
 function ColorSelect(props) {
   return (
-    <ul style={{ulStyle}}>
+    <ul style={ulStyle}>
       {
         colors.map(color => (
-          <li style={{liStyle}} key={color}>
+          <li style={liStyle} key={color}>
             <button onClick={() => props.onChange(color)} style={{...btnStyle,backgroundColor: color}}></button>
           </li>
         ))
